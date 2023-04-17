@@ -33,7 +33,9 @@ const startServer = () => {
     try {
       console.log("server is listening on port: " + PORT);
       await connectDatabase();
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.message)
+    }
   });
 };
 
